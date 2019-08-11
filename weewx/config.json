@@ -1,0 +1,31 @@
+{
+  "name": "WeeWX",
+  "version": "0.4",
+  "slug": "weewx",
+  "description": "WeeWX Weather Station",
+  "url": "https://github.com/jesterpm/weewx-hassio-addon",
+  "startup": "application",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7",
+    "i386"
+    ],
+    "boot": "auto",
+    "hassio_api": false,
+    "hassio_role": "default",
+    "full_access": true,
+    "options": {
+      "log_level": "info",
+      "config_bucket": "",
+      "aws_access_key_id": "",
+      "aws_secret_access_key": ""
+    },
+    "schema": {
+      "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+      "config_bucket": "str",
+      "aws_access_key_id": "str",
+      "aws_secret_access_key": "str"
+    }
+}
